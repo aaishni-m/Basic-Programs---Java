@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class PassFail 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter marks: ");
+		
+		float marks = sc.nextFloat();
+		float percent = (marks/600.0f)*100.0f;
+
+		System.out.println("Marks: "+percent+"%");
+		System.out.println((percent<=35.0)?("Fail"):((percent<=100 && percent>=75)?("A"):((percent<75 && percent>=60)?("B"):("C"))));
+
+	}
+}

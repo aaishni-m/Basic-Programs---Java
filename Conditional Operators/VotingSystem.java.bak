@@ -1,0 +1,92 @@
+import java.util.Scanner;
+
+class VotingSystem 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Welcome!");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the population: ");
+
+		int population = sc.nextInt();
+
+		int bjp=0;
+		int cng=0;
+		int shivSena=0;
+		int aap=0;
+		int mns=0;
+		int nota=0;
+
+		while (population!=0)
+		{
+			System.out.println("\n");
+
+			System.out.println("Enter your choice: \n1.BJP \n2.CONGRESS \n3. SHIV SENA \n4.AAP \n5.MNS \n6.NOTA");
+			int ch = sc.nextInt();
+	
+			switch(ch){
+				case 1: System.out.println("ACHE DIN AYENGE"); bjp++;break;
+				case 2: System.out.println("BHARAT TODO"); cng++;break;
+				case 3: System.out.println("HUM HEIN ASLI SENA"); shivSena++;break;
+				case 4: System.out.println("HUMKO BACHALO"); aap++;break;
+				case 5: System.out.println("BHARAT MAHAN"); mns++;break;
+				case 6: System.out.println("YOU ARE AN EDUCATED PERSON"); nota++;break;
+
+				default: population+=1;
+					System.out.println("Invalid choice"); break;
+			}
+			population-=1;
+		}
+
+
+		System.out.println("\n");
+		System.out.println("\n");
+		System.out.println("Result of the voting system as below: ");
+		System.out.println("\n");
+
+
+		if (bjp>=cng && bjp>=shivSena && bjp>=aap && bjp>=mns && bjp>=nota)
+		{
+			System.out.println("BJP Rules! by "+bjp+" votes");
+
+		}
+
+		if (cng>=bjp && cng>=shivSena && cng>=aap && cng>=mns && cng>=nota)
+		{
+			System.out.println("Congress Rules! by "+cng+" votes");
+
+		}
+
+		if (aap>=cng && aap>=shivSena && aap>=bjp && aap>=mns && aap>=nota)
+		{
+			System.out.println("AAP Rules! by "+aap+" votes");
+
+		}
+
+		if (mns>=cng && mns>=shivSena && mns>=aap && mns>=bjp && mns>=nota)
+		{
+			System.out.println("MNS Rules! by "+mns+" votes");
+
+		}
+
+		if (nota>=cng && nota>=shivSena && nota>=aap && nota>=mns && nota>=bjp)
+		{
+			System.out.println("NOTA by "+nota+" votes");
+
+		}
+
+		if (shivSena>=cng && shivSena>=bjp && shivSena>=aap && shivSena>=mns && shivSena>=nota)
+		{
+			System.out.println("Shiv Sena Rules! by "+shivSena+" votes");
+
+		}
+
+		System.out.println(bjp);
+		System.out.println(cng);
+		System.out.println(shivSena);
+		System.out.println(aap);
+		System.out.println(mns);
+		System.out.println(nota);
+
+	}
+}

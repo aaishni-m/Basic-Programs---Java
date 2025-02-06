@@ -1,0 +1,26 @@
+class ByteConversion 
+{
+	public static void main(String[] args) 
+	{
+		byte b = 10;
+		short s = b;
+		int i = b;
+		//char c = b;   // lossy conversion from byte to char
+		long l = b;
+		float f = b;
+		double d = b;
+		//System.out.println(b);
+		//System.out.println(s);
+		//System.out.println(i);
+		//System.out.println(c);
+		//System.out.println(l);
+		//System.out.println(f);
+		System.out.println(d);
+
+	}
+}
+
+
+
+// byte < short < int < long < float < double
+//      < char

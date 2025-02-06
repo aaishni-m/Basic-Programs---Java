@@ -1,0 +1,13 @@
+class ShortConversion 
+{
+	public static void main(String[] args) 
+	{
+		short s = 1000; 
+		char c = s;   // lossy conversion from short to char
+		int i = s;
+		long l = s;
+		float f = s;
+		double d = s;
+		System.out.println(d);
+	}
+}

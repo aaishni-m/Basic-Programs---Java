@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class AreaPerimeterOfCircle 
+{
+	public static void main(String[] args) 
+	{
+		final float pi = 3.14f;
+		System.out.print("Enter the radius: ");
+		Scanner sc = new Scanner(System.in);
+		float r = sc.nextFloat();
+
+		float area = pi * (r*r);
+		float perimeter = 2 * pi * r;
+		System.out.println("Area of the circle of radius "+r+"m is "+area+"m^2");
+		System.out.println("Perimeter of the circle of radius "+r+"m is "+perimeter+"m");
+	}
+}

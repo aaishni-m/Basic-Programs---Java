@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class YearsDays
+{
+	public static void main(String[] args)
+	{
+		System.out.print("Enter minutes: ");
+		int min = new Scanner(System.in).nextInt();
+		int years = min/(365*24*60);
+		int days = min/(24*60);
+
+		System.out.println(years);
+		System.out.print(days);
+	}
+}

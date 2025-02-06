@@ -1,0 +1,20 @@
+class CharConversion 
+{
+	public static void main(String[] args) 
+	{
+		char c = 'z';
+		byte b = (byte) c;
+		short s = (short) c;
+		int i = (int) c;
+		long l = (long)c;
+		float f = (float)c;
+		double d = (double) c;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(i);
+		System.out.println(l);
+		System.out.println(f);
+		System.out.println(d);
+	}
+}

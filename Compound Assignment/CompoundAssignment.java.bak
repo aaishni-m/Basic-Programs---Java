@@ -1,0 +1,9 @@
+class CompoundAssignment
+{
+	public static void main(String[] args) 
+	{
+		byte b = 10;
+		b += 'a';
+		System.out.println(b);
+	}
+}

@@ -1,0 +1,32 @@
+class NumberToWord 
+{
+	public static void main(String[] args) 
+	{
+		//System.out.println("Enter a number: ");
+		int num = 123; 
+		String str ="";
+		String ans="";
+		while (num>0)//123
+		{
+			int rem = num%10;//3
+			switch(rem)
+			{
+				case 0: str = "Zero "; break;
+				case 1: str = "One "; break;
+				case 2: str = "Two "; break;
+				case 3: str = "Three "; break;
+				case 4: str = "Four "; break;
+				case 5: str = "Five "; break;
+				case 6: str = "Six "; break;
+				case 7: str = "Seven "; break;
+				case 8: str = "Eight "; break;
+				case 9: str = "Nine "; break;
+			}
+			ans  = str+ans;
+			num/=10;
+		}
+
+		System.out.println(ans);
+		
+	}
+}

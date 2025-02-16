@@ -1,0 +1,25 @@
+//1
+//2 3
+//4 5 6
+//7 8 9 10
+
+class Pattern8 
+{
+	public static void main(String[] args) 
+	{
+		int n=10;
+		int a=1;
+		int b=1;
+
+		for (int i=1;i<=n ;i+=a )
+		{
+			for(int j=b;j<i;j++)
+			{
+				System.out.print(j+" ");
+				b++; 
+			}
+			System.out.println();
+			a++;
+		}
+	}
+}

@@ -8,13 +8,21 @@ class PalindromeString
 		System.out.println("Enter a word: ");
 		String word = sc.next();
 
-		String reverse = null; 
+		String str = ""; 
 
 		for (int i = word.length()-1; i >= 0; i--)
 		{
-			System.out.println;
+			str =str+""+word.charAt(i);
 		}
 
-		System.out.print(reverse);
+		System.out.println(str);
+		if (str.equals(word))
+		{
+			System.out.println("String is a palindrome.");
+		}
+		else
+		{
+			System.out.println("String is not a palindrome.");
+		}
 	}
 }

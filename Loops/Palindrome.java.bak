@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Palindrome
+class PalindromeString
 {
 	public static void main(String[] args) 
 	{
@@ -8,13 +8,21 @@ class Palindrome
 		System.out.println("Enter a word: ");
 		String word = sc.next();
 
-		String reverse = null; 
+		String str = ""; 
 
 		for (int i = word.length()-1; i >= 0; i--)
 		{
-			reverse = word.charAt(i);
+			str =str+""+word.charAt(i);
 		}
 
-		System.out.print(reverse);
+		System.out.print(str);
+		if (str.equals(word))
+		{
+			System.out.println("String is a palindrome.");
+		}
+		else
+		{
+			System.out.println("String is not a palindrome.");
+		}
 	}
 }

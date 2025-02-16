@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class LengthEven 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int number = sc.nextInt();
+		int num = number;
+		int length = 0;
+		int new_number=0; 
+
+		while (num>0)
+		{
+			num/=10;
+			length++;
+		}
+		num = number;
+		System.out.println(length);
+
+		if (length%2==0)
+		{
+			System.out.println("Even");
+			for (int i= 1;i<=length ;i++ )//i1
+			{
+				int rem=num%10; //
+				if (rem%2!=0)
+				{
+					rem+=1;
+				}
+				new_number=  new_number*10+ rem; 
+				num/=10;
+			}
+		}
+		int rev =0;
+
+		//System.out.println(new_number);
+		while (new_number>0)
+		{
+			rev = rev*10 + (new_number%10);
+			new_number/=10;
+		}
+		System.out.println(rev);
+	}
+}

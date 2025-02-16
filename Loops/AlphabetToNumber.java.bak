@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class AlphabetToNumber 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter String: ");
+		String str = (new Scanner(System.in).next()).toUpperCase();
+
+		//System.out.println(str.length());
+		//int i =26;
+		int j=1;
+
+		if (str.length()==1)
+		{
+			int s = 1;
+			for (char a = 'A';a<='Z' ;a++ )
+			{
+				if (a==str.charAt(str.length()-1))
+				{    
+					System.out.println(s);
+				}
+				s++;
+			}
+		}
+
+		else{
+			for (char a = 'A';a<='Z' ;a++ ) //aB
+			{
+				int i = 26;
+				for (int b='A';b<='Z' ;b++ )//bA
+				{
+					String newStr = a+""+(char)b;//BA
+					//System.out.println(newStr);//
+					if (str.equals(newStr))
+					{
+						//aSystem.out.println(i+" "+j);
+						System.out.println(newStr" : "i+j);
+						break;
+					}
+					else
+						j+=1;//2
+				}
+				i++;
+			}
+		}
+	}
+}

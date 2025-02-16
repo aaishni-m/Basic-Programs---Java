@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class PreviousNextPrime 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter number: ");
+		int num = new Scanner(System.in).nextInt();
+		int dup = num;
+		int num2 = num;
+		boolean flag = true;
+		int nprime = 0;
+		int pprime = 0; 
+
+		for (int i=2; ;i++ )//2//3
+		{
+			if (num%i==0) //15%3
+			{
+				flag = false; //f
+				num++; //16
+				i=2;
+			}
+			     
+			if (dup<i)
+			{
+				nprime = num;
+				break;
+			}
+		}
+
+
+		for (int i=2;i<num2 ;i++ )//2,3
+		{
+			if (num2%i==0) //3%2
+			{
+				flag = false; //f
+				num2++;//
+				i=2;
+			}
+			     
+			if (dup>i)//3>2
+			{
+				pprime = i;//3
+				break;
+			}
+		}
+
+		System.out.println(pprime+" "+dup+ " "+nprime);
+	}
+}

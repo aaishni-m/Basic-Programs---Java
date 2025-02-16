@@ -101,7 +101,7 @@ class Bank
 				System.exit(0);
 			}
 
-			else if(opt==2)
+			else if(opt==2) 
 			{
 				System.out.print("username: ");
 				username1 = sc.next();

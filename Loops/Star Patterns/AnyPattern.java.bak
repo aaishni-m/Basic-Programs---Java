@@ -1,0 +1,41 @@
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import javax.imageio.ImageIO;
+
+public class AnyPattern {
+    public static void main(String[] args) {
+        // Specify the path to the image file
+        String filePath = "C:/Users/Aaish/OneDrive/Desktop/cartoon_at.png";
+
+        // Load the image file
+        try {
+            File file = new File(filePath);
+            BufferedImage image = ImageIO.read(file);
+
+            // Define a tolerance for detecting black pixels
+            int tolerance = 30;
+
+            // Loop through the pixels of the image
+            for (int i = 0; i < image.getHeight(); i++) {
+                for (int j = 0; j < image.getWidth(); j++) {
+                    Color cl = new Color(image.getRGB(j, i));
+
+                    // Print RGB values for debugging
+                    System.out.print("(" + cl.getRed() + "," + cl.getGreen() + "," + cl.getBlue() + ") ");
+
+                    // Check for black pixels with a tolerance
+                    if (cl.getRed() < tolerance && cl.getGreen() < tolerance && cl.getBlue() < tolerance) {
+                        System.out.print("  "); // Print space for black pixels
+                    } else {
+                        System.out.print("* "); // Print * for other colors
+                    }
+                }
+                System.out.println(); // Move to the next row
+            }
+        } catch (Exception e) {
+            System.out.println("Something went wrong while reading the image:");
+            e.printStackTrace();
+        }
+    }
+}

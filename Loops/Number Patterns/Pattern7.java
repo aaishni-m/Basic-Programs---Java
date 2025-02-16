@@ -11,14 +11,10 @@ class Pattern7
 		int n = 15;
 		int a = 1;
 		int b =1;
-		int c = 1;
-		int sum = 0; 
 
 		for (int i=1;i<=n ;i+=a )
 		{
-			sum+=c;
-			c++;
-			int temp = sum;
+			int temp = i;
 			for (int j=b;j<=i ;j++ )
 			{
 				System.out.print(temp--+" ");

@@ -7,17 +7,17 @@ class Pattern8
 {
 	public static void main(String[] args) 
 	{
-		int n=10;
+		int n=5;
 		int a=1;
 		int b=1;
 		int num=1;
 		char ch='a'; 
 
-		for (int i=1;i<=n ;i+=a )
+		for (int i=1;i<=n ;i++ )
 		{
-			for(int j=b;j<=i;j++)
+			for(int j=1;j<=i;j++)
 			{
-				if (i%2==0)
+				if (i%2!=0)
 				{
 					System.out.print(num+" ");
 					num++; 
@@ -25,11 +25,9 @@ class Pattern8
 				else {
 					System.out.print(ch+" ");
 					ch++;
-				}
-				b++; 
+				} 
 			}
 			System.out.println();
-			a++;
 		}
 	}
 }

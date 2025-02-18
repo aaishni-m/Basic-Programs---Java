@@ -13,9 +13,9 @@ class Pattern8
 
 		for (int i=1;i<=n ;i+=a )
 		{
-			for(int j=b;j<i;j++)
+			for(int j=b;j<=i;j++)
 			{
-				System.out.print(j+" ");
+				System.out.print(b+" "); 
 				b++; 
 			}
 			System.out.println();

@@ -3,7 +3,7 @@
 //4 5 6
 //7 8 9 10
 
-class Pattern8 
+class Pattern16
 {
 	public static void main(String[] args) 
 	{

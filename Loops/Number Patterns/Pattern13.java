@@ -1,9 +1,9 @@
-//1
-//2 3
-//4 5 6
-//7 8 9 10
+//a
+//b c
+//d e f
+//g h i j 
 
-class Pattern8 
+class Pattern13 
 {
 	public static void main(String[] args) 
 	{

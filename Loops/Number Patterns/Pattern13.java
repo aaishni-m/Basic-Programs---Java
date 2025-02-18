@@ -1,7 +1,7 @@
 //a
 //b c
 //d e f
-//g h i j 
+//g h i j
 
 class Pattern13 
 {

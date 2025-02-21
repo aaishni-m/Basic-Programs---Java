@@ -1,4 +1,4 @@
-// 76 * 76 = 5776 last two dig = num
+	// 76 * 76 = 5776 last two dig = num
 
 class Automorphic
 {

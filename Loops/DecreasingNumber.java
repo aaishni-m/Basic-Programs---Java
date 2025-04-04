@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
-class IncreasingNumber
+class DecreasingNumber
 {
 	public static void main(String [] args)
 	{
 		Scanner sc = new Scanner(System.in); 
 		int num = sc.nextInt();
-		//123
+		//321
 		
-		while(num>0)// 123>0
+		while(num>0)// 321>0
 		{
 
 			int num1 = num%10; //3
-			int num2 = num%100; //2
+			int num2 = num%100; //0
 
 			if(length(num)==1)
 			{
-				System.out.println("IncreasingNumber");
+				System.out.println("DecreasingNumber");
 			}
 
-			if(num2 < num1)//2<3
-				System.out.println("Not a IncreasingNumber");
+			if(num2< num1)//3<2
+				System.out.println("Not a DecreasingNumber");
 
 			num/=10; //3
 		}	

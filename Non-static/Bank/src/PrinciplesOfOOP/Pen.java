@@ -20,7 +20,7 @@ public class Pen {
 	
 	public void displayPen() {
 		System.out.println("Brand: "+brand);
-		System.out.println("Pricce: "+price);
+		System.out.println("Price: "+price);
 		System.out.println("Type: "+type);
 	}
 }

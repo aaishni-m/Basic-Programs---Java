@@ -38,7 +38,8 @@ public class Member {
 				String genre = sc.next();
 				b = new Book(title, author, genre); 
 				this.issuedBooks+=1;
-				this.currIssued = true; 
+				this.currIssued = true;
+				b.isIssued = true; 
 				System.out.println("Have a good read");
 				return;
 			}
@@ -57,6 +58,7 @@ public class Member {
 		String title = sc.next();
 		if(b.title.equals(title)) {
 			this.currIssued = false; 
+			b.isIssued = false; 
 			System.out.println("Thank you!");			
 		}
 		else {

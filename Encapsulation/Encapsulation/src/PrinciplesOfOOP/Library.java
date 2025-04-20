@@ -4,9 +4,9 @@ import java.util.*;
 public class Library {
 	Scanner sc = new Scanner(System.in); 
 	private String libraryName = "Good reads";
-	private int noBooks; 
-	private int issuedBooks; 
-	private int genre; 
+	private int noBooks = 84321; 
+	private int issuedBooks = 55672; 
+	private int genre = 50; 
 	private boolean membership = false;
 	Member m ; 
 	

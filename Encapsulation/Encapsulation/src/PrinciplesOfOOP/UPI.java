@@ -20,7 +20,5 @@ public class UPI {
 		this.bankPin = bankPin;
 		this.phno = phno;
 		acc = new BankAcc();
-	} 
-	
-	
+	}  
 };

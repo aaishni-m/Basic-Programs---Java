@@ -10,6 +10,7 @@ public class BankAcc {
 	private long phno; 
 	private long aadhar; 
 	UPI upi;
+	BankAcc acc = new BankAcc(); 
 	
 	
 	public BankAcc() {
@@ -135,7 +136,8 @@ public class BankAcc {
 	}
 	
 	public void registerUPI(String upiID, int upiPin) {
-		upi = new UPI(upiID,upiPin,accno,bankName,pin,phno);
+		upi = new UPI(upiID,upiPin,accno,bankName,pin,phno,acc);
 		System.out.println("UPI successfully registered");
 	}
 }
+

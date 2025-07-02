@@ -17,6 +17,6 @@ public class StudentDriver {
         String b = s2.toString();
         System.out.println(b);
         Thread.sleep(1000); 
-        System.out.println(a==b);
+        System.out.println("s1 == s2: "+(a==b));
     }
 }

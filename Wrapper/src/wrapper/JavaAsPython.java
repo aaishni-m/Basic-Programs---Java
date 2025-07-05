@@ -9,6 +9,6 @@ public class JavaAsPython {
 		Object ans = (Integer)a + (Double)c; // performing downcasting and auto-unboxing is done implicity
 		System.out.println(ans); 
 		
-		System.out.println(Integer.valueOf(10)); 
+		System.out.println(Integer.valueOf(10)); // int to Integer
 	}
 }

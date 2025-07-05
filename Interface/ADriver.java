@@ -6,7 +6,9 @@ public class ADriver {
 		A a = new A(); 
 		
 		I2 obj = new A(); 
+		
 		System.out.println(obj.x); 
+		
 		//System.out.println(A.x);
 		System.out.println(I2.x);
 	}

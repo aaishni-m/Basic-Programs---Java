@@ -1,4 +1,4 @@
-public class Circle extends I1 {
+public class Circle implements I1 {
     double radius; 
 
     Circle(){

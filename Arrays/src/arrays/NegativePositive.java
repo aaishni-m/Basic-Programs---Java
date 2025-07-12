@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
+// 21 mins
 public class NegativePositive {
 
 	public static void main(String[] args) {

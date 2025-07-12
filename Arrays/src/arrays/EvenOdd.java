@@ -2,6 +2,8 @@ package arrays;
 
 import java.util.Arrays;
 
+// 3 mins
+
 public class EvenOdd {
 
 	public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class EvenOdd {
 				k--; 
 			}
 		}
-		return ans; 
+		return ans;  
 	}
 
 }

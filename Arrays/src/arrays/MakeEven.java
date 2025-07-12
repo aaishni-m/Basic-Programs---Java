@@ -2,6 +2,8 @@ package arrays;
 
 import java.util.Arrays;
 
+//2 mins
+
 public class MakeEven {
 
 	public static void main(String[] args) {

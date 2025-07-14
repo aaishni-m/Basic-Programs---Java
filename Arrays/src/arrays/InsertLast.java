@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
+// 4mins 
 public class InsertLast {
 
 	public static void main(String[] args) {
@@ -19,8 +20,7 @@ public class InsertLast {
 			}
 			else
 				ans[i]=arr[i]; 
-		}
-//		ans[ans.length-1]=num;
+		} 
 		return ans; 
 	} 
 

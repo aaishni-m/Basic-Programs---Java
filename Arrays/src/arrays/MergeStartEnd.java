@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
+//24mins
 public class MergeStartEnd {
 
 	public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class MergeStartEnd {
 			}
 			else if(j>=arr2.length) { // 4 >= 4
 				ans[i]=arr1[i-j];
+				System.out.println(j);
 			}
 			else{ // 3 < 4
 					ans[i]=arr2[j++]; 

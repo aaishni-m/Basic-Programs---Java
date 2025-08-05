@@ -39,7 +39,7 @@ public class SingleNumber {
         int size = nums.length; //3
         int res = nums[0]; //16
         for(int i = 1; i < size; i++){ // 2 - 3
-        	System.out.println(res);
+//        	System.out.println(res);
             res= res ^ nums[i]; // any number xor with itself is 0
         }
         return res;

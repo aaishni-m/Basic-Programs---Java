@@ -6,7 +6,7 @@ public class SortDates {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String [] dates = {"20 Sep 1958", "16 Mar 2068", "06 Jun 1933","25 May 2068","25 May 1912"};
+		String [] dates = {"20 Sep 1958", "16 Mar 2068", "06 Jun 1933","25 May 2068","25 May 1912"};	
 		sortDates(dates); 
 //		System.out.println(extract("26 sep 2003"));
 		
@@ -46,7 +46,7 @@ public class SortDates {
 	}
 	
 	public static int extractMnth(String date) {
-		System.out.println(date);
+//		System.out.println(date);
 		if(date.toLowerCase().contains("jan")) {
 			return 1;
 		}
